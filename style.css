@@ -227,9 +227,11 @@
 .header-white {
     background-color: var(--color-neutral-10);
 }
+
 .header-basic {
     background: var(--background-basic);
 }
+
 .header-landing {
     background: var(--background-basic);
     height: 43vh;
@@ -246,7 +248,7 @@
 }
 
 .text-bold {
-    font-weight: 900;
+    font-weight: 800;
 }
 
 .hgroup {
@@ -300,20 +302,16 @@
     letter-spacing: var(--letter-spacing-sm);
 }
 
+.title-sm-white {
+    color:var(--color-neutral-10);
+}
+
 .title-sm-blue {
-    font-size: 35px;
     color: var(--color-blue-50);
-    font-weight: 800;
-    line-height: var(--line-height-lg);
-    letter-spacing: var(--letter-spacing-sm);
 }
 
 .title-sm-orange {
-    font-size: 35px;
     color: var(--color-orange-50);
-    font-weight: 800;
-    line-height: var(--line-height-lg);
-    letter-spacing: var(--letter-spacing-sm);
 }
 
 .subtitle-sm {
@@ -353,6 +351,7 @@
 }
 
 .input {
+    max-width: 100%;
     font-family: var(--font-family);
     height: 40px;
     padding-block: 10px;
@@ -403,43 +402,50 @@
     border-radius: 10px;
     padding-inline: 10px;
     transition: 0.3s ease-in-out;
-    gap:5px;
+    gap: 5px;
 }
 
 .button .img {
     width: 32px;
     height: 32px;
-    margin:0;
+    margin: 0;
     padding: 0;
 }
 
-.button:hover{
-    color:var(--color-neutral-10);
+.button:hover {
+    color: var(--color-neutral-10);
     box-shadow: var(--shadow-button-hover);
 }
-.button-error{
-    color:var(--color-neutral-10);
+
+.button-error {
+    color: var(--color-neutral-10);
     background-color: var(--color-error-hard);
 }
-.button-error:hover{
+
+.button-error:hover {
     background-color: var(--color-error-light);
 }
-.button-green{
-    color:var(--color-neutral-10);
+
+.button-green {
+    color: var(--color-neutral-10);
     background-color: var(--color-green-hard);
 }
-.button-green:hover{
+
+.button-green:hover {
     background-color: var(--color-green-light);
 }
+
 .button-unactive {
     color: var(--color-neutral-10);
     border: none;
     background-color: var(--color-neutral-60);
 }
+
 .button-unactive:hover {
     color: var(--color-neutral-10);
     box-shadow: none;
 }
+
 .button-primary {
     color: var(--color-neutral-10);
     background-color: var(--color-orange-80);
@@ -451,33 +457,18 @@
 }
 
 .button-primary:hover {
-    background-color: var(--color-orange-30);
-}
-
-.button-primary-active {
-    background-color: var(--color-orange-30);
+    background-color: var(--color-orange-50);
 }
 
 .button-secondary {
     font-family: var(--font-family);
     color: var(--color-neutral-10);
-    background-color: var(--color-blue-60);
-}
-
-.button-secondary-static {
-    color: var(--color-neutral-10);
-    background-color: var(--color-blue-60);
+    background-color: var(--color-blue-70);
 }
 
 .button-secondary:hover {
-    background-color: var(--color-blue-30);
+    background-color: var(--color-blue-50);
 }
-
-.button-secondary-active {
-    background-color: var(--color-blue-30);
-}
-
-
 
 .header .button-corner {
     position: absolute;
@@ -526,6 +517,35 @@
     margin-bottom: 20px;
 }
 
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    border-radius: 20px;
+    min-height: 200px;
+    background-color: var(--color-neutral-70);
+    max-width: 500px;
+    margin-block: 20px;
+    gap:5px;
+    padding: 20px;
+}
+
+.form .hgroup {
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+}
+
+.form .section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.form .form-button {
+    width: 100%;
+}
 .user-label {
     width: 100%;
     display: flex;
@@ -615,6 +635,7 @@
     text-decoration: underline;
     transition: 0.3s ease-in-out;
 }
+
 .outline:hover {
     cursor: pointer;
     color: var(--color-neutral-100);
