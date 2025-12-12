@@ -122,18 +122,15 @@
     display: block;
 } */
 
-.img-logo {
+.icon {
     width: 60px;
-    border-radius: 0;
-    position: absolute;
-    /* Cambia a absolute para posicionarlo dentro de hgroup */
-    left: 200px;
-    /* Lo pegas al borde izquierdo */
-    top: 10px;
 }
 
-.img-logo-sm {
-    width: 50px;
+.icon-sm {
+    width: 40px;
+}
+
+.img-header {
     border-radius: 0;
     position: absolute;
     /* Cambia a absolute para posicionarlo dentro de hgroup */
@@ -316,7 +313,7 @@
     font-size: 15px;
     font-weight: 500;
     color: var(--color-neutral-10);
-    margin-top:10px;
+    margin-top: 10px;
     line-height: var(--line-height-sm);
     letter-spacing: var(--letter-spacing-sm);
 }
@@ -331,22 +328,21 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    height: 7vh;
+    gap: 20px;
+    width: 100%;
+    font-weight: 600;
+    z-index: 2000;
+    list-style: none;
+    justify-content: space-around;
+    background-color: var(--color-blue-20);
+    font-family: var(--font-family);
 }
 
 .main-menu {
     position: fixed;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
     bottom: 0;
-    height: 7vh;
-    width: 100%;
-    background-color: var(--color-blue-20);
-    gap: 20px;
-    list-style: none;
-    z-index: 2000;
-    font-family: var(--font-family);
-    font-weight: 600;
+
 }
 
 .input {
@@ -395,6 +391,12 @@
     border-radius: 10px;
     padding: 10px;
     transition: 0.3s ease-in-out;
+}
+
+.button-unactive {
+    color: var(--color-neutral-10);
+    border: none;
+    background-color: var(--color-neutral-60);
 }
 
 .button-primary {
@@ -459,7 +461,7 @@
     display: block;
     font-family: "Courier New", monospace;
     font-size: 14px;
-    overflow-x: auto;    
+    overflow-x: auto;
     margin-block: 20px;
 }
 
@@ -484,7 +486,7 @@
 .tweet {
     border-radius: 20px;
     min-height: 200px;
-    background-color: var(--color-neutral-80);
+    background-color: var(--color-neutral-70);
     padding: var(--padding-md);
     max-width: 500px;
     margin-bottom: 20px;
@@ -558,4 +560,18 @@
 
 .link .a {
     color: var(--color-blue-70);
+}
+
+.outline {
+    color: var(--color-blue-30);
+    font-style: normal;
+    text-decoration: underline;
+    transition: 0.3s ease-in-out;
+}
+
+.outline:hover {
+    cursor: pointer;
+    color: var(--color-neutral-100);
+    background-color: var(--color-orange-30);
+    transition: 0.3s ease-in-out;
 }

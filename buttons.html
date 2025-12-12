@@ -29,7 +29,7 @@
   ============================ -->
     <header class="header header-dark">
         <a href="index.html">
-            <img class="img img-logo-sm link" src="./img/logo.png" alt="Logo">
+            <img class="img icon img-header link" src="./img/logo.png" alt="Logo">
         </a>
         <hgroup class="hgroup">
             <h1 class="text title-md">Buttons</h1>
@@ -65,6 +65,7 @@
             <nav class="nav">
                 <button class="button button-primary">Primary Interactive</button>
                 <button class="button button-secondary">Secondary Interactive</button>
+                <button class="button button-unactive" disabled>Disabled</button>
             </nav>
             <p class="text paragraph">
                 Interactive buttons respond to user actions. Primary is for the main CTA (e.g., “Sign Up”), Secondary
@@ -72,17 +73,34 @@
             </p>
         </section>
 
+        <h2 class="text title-md">Link menu</h2>
+            <ul class="nav menu-row">
+                <li class="link"><a class="a">Landing</a></li>
+                <li class="link"><a class="a">Typography</a></li>
+                <li class="link"><a class="a">Buttons</a></li>
+                <li class="link"><a class="a">Icons</a></li>
+                <li class="link"><a class="a">Containers</a></li>
+                <li class="link"><a class="a">Images</a></li>
+                <li class="link"><a class="a">Forms</a></li>
+            </ul>
+
         <!-- Outline & Disabled Buttons -->
+        <h2 class="text title-md">Outline & Disabled</h2>
+        <section class="section tweet">
+            <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Harum mollitia eveniet eaque repudiandae totam assumenda qui quia,
+                doloremque saepe eos perferendis dolores ipsum labore at obcaecati culpa sit maiores sunt.</p>
+            <a class="text outline">Outline</a>
+        </section>
+        <p class="text paragraph">
+            Outline buttons are used for optional actions (e.g., “Learn More”), while disabled buttons indicate
+            unavailable actions (e.g., “Download” before data is ready).
+        </p>
+        <!-- Links -->
         <section class="section">
-            <h2 class="text title-md">Outline & Disabled</h2>
-            <nav class="nav">
-                <button class="button btn-ac">Outline</button>
-                <button class="btn btn-disabled" disabled>Disabled</button>
-            </nav>
-            <p class="text paragraph">
-                Outline buttons are used for optional actions (e.g., “Learn More”), while disabled buttons indicate
-                unavailable actions (e.g., “Download” before data is ready).
-            </p>
+            <a>
+                <img class="img icon link" src="./img/logo.png" alt="Logo">
+            </a>
         </section>
 
     </main>
@@ -91,7 +109,7 @@
        NAVIGATION MENU
        Links to other style guide pages
   ============================ -->
-    <ul class="nav main-menu">
+    <ul class="nav menu-row main-menu">
         <li class="link"><a href="index.html" class="a">Landing</a></li>
         <li class="link"><a href="typography.html" class="a">Typography</a></li>
         <li class="link"><a href="buttons.html" class="a">Buttons</a></li>
