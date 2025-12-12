@@ -132,11 +132,12 @@
 
 .img-header {
     border-radius: 0;
-    position: absolute;
+    position: relative;
     /* Cambia a absolute para posicionarlo dentro de hgroup */
-    left: 200px;
+    left: 0px;
     /* Lo pegas al borde izquierdo */
-    top: 10px;
+    bottom: 20px;
+    margin-inline: 20px;
 }
 
 /* Variantes de peso */
@@ -208,7 +209,7 @@
     width: 100%;
     min-height: 10vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     padding: 10px;
     position: relative;
@@ -222,7 +223,9 @@
 .header-white {
     background-color: var(--color-neutral-10);
 }
-
+.header-basic {
+    background: var(--background-basic);
+}
 .header-landing {
     background: var(--background-basic);
     height: 43vh;
@@ -468,6 +471,7 @@
 .section {
     color: var(--color-neutral-10);
     padding: 20px;
+    width: 80%;
 }
 
 
@@ -500,6 +504,18 @@
     gap: 10px;
 }
 
+.label {
+    display: flex;
+    flex-direction: row;
+    padding-block: 0;
+    gap: 10px;
+    font-size: 13px;
+    padding-left: 10px;
+    font-weight: 600;
+    color: var(--color-orange-40);
+    border-top: 1px solid var(--color-orange-40);
+}
+
 .user-label .img-profile {
     width: 50px;
 }
@@ -510,6 +526,7 @@
 
 .paragraph {
     color: var(--color-neutral-40);
+    font-size: 15px;
     margin: 10px;
     padding-inline: 40px;
 }
