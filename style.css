@@ -36,6 +36,10 @@
     --color-orange-80: #BF5D2E;
     --color-orange-90: #994722;
     --color-orange-100: #73341A;
+    --color-error-hard: rgb(189, 0, 0);
+    --color-error-light: #ff0000;
+    --color-green-hard: rgb(0, 150, 0);
+    --color-green-light: #0dc70d;
     --background-basic: radial-gradient(circle farthest-corner,
             var(--color-blue-60) 0%,
             var(--color-blue-100) 100%);
@@ -385,23 +389,57 @@
 }
 
 .button {
+    display: flex;
+    flex-direction: row;
     cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     font-family: var(--font-family);
     height: 40px;
     min-width: 125px;
     font-weight: 700;
     border: 2px solid var(--color-neutral-10);
     border-radius: 10px;
-    padding: 10px;
+    padding-inline: 10px;
     transition: 0.3s ease-in-out;
+    gap:5px;
 }
 
+.button .img {
+    width: 32px;
+    height: 32px;
+    margin:0;
+    padding: 0;
+}
+
+.button:hover{
+    color:var(--color-neutral-10);
+    box-shadow: var(--shadow-button-hover);
+}
+.button-error{
+    color:var(--color-neutral-10);
+    background-color: var(--color-error-hard);
+}
+.button-error:hover{
+    background-color: var(--color-error-light);
+}
+.button-green{
+    color:var(--color-neutral-10);
+    background-color: var(--color-green-hard);
+}
+.button-green:hover{
+    background-color: var(--color-green-light);
+}
 .button-unactive {
     color: var(--color-neutral-10);
     border: none;
     background-color: var(--color-neutral-60);
 }
-
+.button-unactive:hover {
+    color: var(--color-neutral-10);
+    box-shadow: none;
+}
 .button-primary {
     color: var(--color-neutral-10);
     background-color: var(--color-orange-80);
@@ -413,15 +451,11 @@
 }
 
 .button-primary:hover {
-    color: var(--color-neutral-100);
     background-color: var(--color-orange-30);
-    box-shadow: var(--shadow-button-hover);
 }
 
 .button-primary-active {
-    color: var(--color-neutral-100);
     background-color: var(--color-orange-30);
-    box-shadow: var(--shadow-button-hover);
 }
 
 .button-secondary {
@@ -436,15 +470,11 @@
 }
 
 .button-secondary:hover {
-    color: var(--color-neutral-100);
     background-color: var(--color-blue-30);
-    box-shadow: var(--shadow-button-hover);
 }
 
 .button-secondary-active {
-    color: var(--color-neutral-100);
     background-color: var(--color-blue-30);
-    box-shadow: var(--shadow-button-hover);
 }
 
 
@@ -585,7 +615,6 @@
     text-decoration: underline;
     transition: 0.3s ease-in-out;
 }
-
 .outline:hover {
     cursor: pointer;
     color: var(--color-neutral-100);
