@@ -33,11 +33,12 @@
             </hgroup>
         </section>
     </section>
+
     <!-- ======================================================= -->
 
 
     <!-- ===========================
-       LANDING MENU - TYPOGRAPHY
+       TYPOGRAPHY
   ============================ -->
 
 
@@ -420,7 +421,7 @@
                 <div class="color-item">
                     <div class="color-swatch" style="--color-value: var(--color-red-hard);"></div>
                     <span class="color-label">--color-red-hard</span>
-                    <span class="color-label ">rgb(189, 0, 0)</span>
+                    <span class="color-label ">#bd0000</span>
                 </div>
 
                 <div class="color-item">
@@ -432,7 +433,7 @@
                 <div class="color-item">
                     <div class="color-swatch" style="--color-value: var(--color-green-hard);"></div>
                     <span class="color-label">--color-green-hard</span>
-                    <span class="color-label ">rgb(0, 150, 0)</span>
+                    <span class="color-label ">#009600</span>
                 </div>
 
                 <div class="color-item">
@@ -459,6 +460,11 @@
                 </div>
 
                 <div class="color-item">
+                    <div class="color-swatch" style="--color-value: var(--color-link);"></div>
+                    <span class="color-label">--color-link</span>
+                </div>
+
+                <div class="color-item">
                     <div class="color-swatch" style="--color-value: var(--color-button-blue);"></div>
                     <span class="color-label">--color-button-blue</span>
                 </div>
@@ -474,32 +480,32 @@
                 </div>
 
                 <div class="color-item">
-                    <div class="color-swatch" style="--color-value: var(--color-neutral-40);"></div>
+                    <div class="color-swatch" style="--color-value: var(--color-text-secondary);"></div>
                     <span class="color-label">--color-text-secondary</span>
                 </div>
 
                 <div class="color-item">
-                    <div class="color-swatch" style="--color-value: var(--color-orange-50);"></div>
+                    <div class="color-swatch" style="--color-value: var(--color-accent-base);"></div>
                     <span class="color-label">--color-accent-base</span>
                 </div>
 
                 <div class="color-item">
-                    <div class="color-swatch" style="--color-value: var(--color-blue-50);"></div>
+                    <div class="color-swatch" style="--color-value: var(--color-accent-secondary);"></div>
                     <span class="color-label">--color-accent-secondary</span>
                 </div>
 
                 <div class="color-item">
-                    <div class="color-swatch" style="--color-value: var(--color-neutral-70);"></div>
+                    <div class="color-swatch" style="--color-value: var(--color-border-subtle);"></div>
                     <span class="color-label">--color-border-subtle</span>
                 </div>
 
                 <div class="color-item">
-                    <div class="color-swatch" style="--color-value: var(--color-red-hard);"></div>
+                    <div class="color-swatch" style="--color-value: var(--color-status-error);"></div>
                     <span class="color-label">--color-status-error</span>
                 </div>
 
                 <div class="color-item">
-                    <div class="color-swatch" style="--color-value: var(--color-green-hard);"></div>
+                    <div class="color-swatch" style="--color-value: var(--color-status-success);"></div>
                     <span class="color-label">--color-status-success</span>
                 </div>
 
@@ -630,6 +636,71 @@
 
 
         <!-- ===========================
+       LINKS
+  ============================ -->
+
+
+        <!-- ======================================================= -->
+        <header class="header header-dark">
+            <hgroup class="hgroup">
+                <h1 class="text title-md">Links</h1>
+            </hgroup>
+        </header>
+
+        <!-- Main content -->
+        <main class="main main-basic">
+
+            <!-- Intro -->
+            <section class="section section-typography">
+                <p class="text text-body" style="margin-bottom: 30px;">
+                    This is an interactive <a href="#" class="link">default link</a> for demonstration.
+                </p>
+                <div class="link-states-group">
+
+                    <div class="link-state-item">
+                        <p class="text text-body">
+                            <a href="#" class="link-default-demo">Default State</a>
+                        </p>
+                        <span class="color-label token">.link</span>
+                    </div>
+
+                    <div class="link-state-item">
+                        <p class="text text-body">
+                            <a href="#" class="link-hover-demo">Hover State</a>
+                        </p>
+                        <span class="color-label token">.link:hover</span>
+                    </div>
+
+                    <div class="link-state-item">
+                        <p class="text text-body">
+                            <a href="#" class="link-active-demo">Active State</a>
+                        </p>
+                        <span class="color-label token">.link:active</span>
+                    </div>
+
+                    <div class="link-state-item">
+                        <p class="text text-body">
+                            <a href="#" class="link-visited-demo">Visited State</a>
+                        </p>
+                        <span class="color-label token">.link:visited</span>
+                    </div>
+
+                    <div class="link-state-item">
+                        <p class="text text-body">
+                            <a href="#" class="link-focus-demo">Focus State</a>
+                        </p>
+                        <span class="color-label token">.link:focus</span>
+                    </div>
+
+                </div>
+
+            </section>
+        </main>
+
+        <!-- ======================================================= -->
+
+
+        <!-- ===========================
        BUTTONS
   ============================ -->
 
@@ -662,27 +733,13 @@
                     </button>
 
                 </nav>
-                <p class="text paragraph">
+                <p class="text text-body">
                     Interactive buttons respond to user actions. Primary is for the main CTA (e.g., “Sign Up”),
                     Secondary
                     for alternatives (e.g., “Skip for now”).
                 </p>
             </section>
 
-            <h2 class="text title-md">Link menu</h2>
-            <ul class="nav menu-row">
-                <li class="link"><a class="a">Landing</a></li>
-                <li class="link"><a class="a">Containers</a></li>
-            </ul>
-            <p class="text paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias illo inventore eos
-                accusamus quos eius, laudantium cum eaque distinctio ipsum, sed nemo molestiae consequuntur nesciunt
-                laborum! Id nulla autem dolore!</p>
-            <ul class="nav menu-row">
-                <li class="link"><a class="a">Landing</a></li>
-                <li class="link"><a class="a">Typography</a></li>
-                <li class="link"><a class="a">Typography</a></li>
-                <li class="link"><a class="a">Containers</a></li>
-            </ul>
 
             <!-- Outline & Disabled Buttons -->
             <h2 class="text title-md">Outline & Disabled</h2>
@@ -696,23 +753,9 @@
                 Outline buttons are used for optional actions (e.g., “Learn More”), while disabled buttons indicate
                 unavailable actions (e.g., “Download” before data is ready).
             </p>
-            <!-- Links -->
-            <section class="section">
-                <a>
-                    <img class="img icon link" src="./img/logo.png" alt="Logo">
-                </a>
-            </section>
 
         </main>
-        <!-- ======================================================= -->
 
-
-        <!-- ===========================
-    BUTTONS - COLORS
-============================ -->
-
-
-        <!-- ======================================================= -->
         <!-- ======================================================= -->
 
 
@@ -723,9 +766,6 @@
 
         <!-- ======================================================= -->
         <header class="header header-dark">
-            <a href="index.html">
-                <img class="img icon img-header link" src="./img/logo.png" alt="Logo">
-            </a>
             <hgroup class="hgroup">
                 <h1 class="text title-md">Containers</h1>
                 <p class="text subtitle-sm">This page showcases the container styles available in the design system.</p>
