@@ -249,7 +249,7 @@
     width: 100%;
     min-height: 10vh;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     padding: var(--space-s);
     position: relative;
@@ -269,6 +269,7 @@
 
 .header-landing {
     background: var(--background-basic);
+    flex-direction: row;
     height: 43vh;
 }
 
@@ -443,12 +444,22 @@
     border-radius: var(--radius-full);
 }
 
-.header .img-profile {
+/* Avatar en tweets: tamaño fijo, sin posicionamiento */
+.tweet .user-label > .img.img-profile {
+    width: 50px;
+    height: 50px;
+    border-radius: var(--radius-full);
+    flex: 0 0 auto; /* evita que flex lo estire/encoga */
+  }
+  
+  .header .img-profile {
     width: 100px;
+    height: 100px;
     position: absolute;
     left: 200px;
     top: var(--space-s);
-}
+  }
+  
 
 .button {
     display: flex;
@@ -477,6 +488,7 @@
 
 .button:hover {
     color: var(--color-neutral-10);
+    border:1px solid var(--color-neutral-10);
     box-shadow: var(--shadow-button-hover);
 }
 
@@ -633,7 +645,7 @@
     display: flex;
     flex-direction: row;
     padding-block: 0;
-    gap: var(--space-l);
+    gap: var(--space-s);
 }
 
 .label {
@@ -645,10 +657,6 @@
     font-weight: 600;
     color: var(--color-orange-40); 
     align-items: center; 
-}
-
-.user-label .img-profile {
-    width: 50px;
 }
 
 .user-label .text {
